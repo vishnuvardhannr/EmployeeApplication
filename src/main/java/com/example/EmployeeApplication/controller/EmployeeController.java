@@ -12,6 +12,7 @@ public class EmployeeController {
 
     @GetMapping("/employee")
     public ResponseEntity<String> getEmp(){
+        System.out.println("Employee");
         return new ResponseEntity<>("Emp details", HttpStatus.OK);
     }
 
